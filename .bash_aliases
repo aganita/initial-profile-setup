@@ -15,5 +15,5 @@ fi
 if [[ $platform == 'linux' ]]; then
    alias sublime='~/workspace/tools/sublime_text_2/sublime_text'
 elif [[ $platform == 'mac' ]]; then
-   alias sublime='/Applications/sublime_text_2.app/Contents/SharedSupport/bin/subl'
+   alias sublime='/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl'
 fi
