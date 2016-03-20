@@ -16,9 +16,9 @@ fi
 
 # platform specific aliases
 if [[ $platform == 'linux' ]]; then
-   alias sublime='~/workspace/tools/sublime_text_2/sublime_text'
+   alias subl='~/workspace/tools/sublime_text_2/sublime_text'
    alias ls='ls --color=auto'
 elif [[ $platform == 'mac' ]]; then
-   alias sublime='/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl'
+   alias subl='/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl'
    alias ls='ls -G'
 fi
