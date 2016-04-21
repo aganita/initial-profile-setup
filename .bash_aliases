@@ -4,6 +4,7 @@ alias rm='rm -i'
 alias ll='ls -ltraG'
 alias pwd='pwd -P'
 alias grep='grep --color=auto'
+alias gac='git commit -a -m'
 
 #detect the OS
 platform='unknown'
