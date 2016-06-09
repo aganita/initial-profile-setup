@@ -4,6 +4,17 @@ alias rm='rm -i'
 alias ll='ls -ltraG'
 alias pwd='pwd -P'
 alias grep='grep --color=auto'
+
+#git aliases
+alias gs='git status '
+alias ga='git add '
+alias gb='git branch '
+alias gc='git commit'
+alias gd='git diff'
+alias go='git checkout '
+alias gb='git branch -v'
+alias gk='gitk --all&'
+alias gx='gitx --all'
 alias gac='git commit -a -m'
 
 #detect the OS
