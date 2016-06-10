@@ -16,7 +16,9 @@ alias gb='git branch -v'
 alias gk='gitk --all&'
 alias gx='gitx --all'
 alias gac='git commit -a -m'
-alias gp='git push'
+alias gpush='git push'
+alias gpull='git pull'
+alias gti='git'
 
 #detect the OS
 platform='unknown'
