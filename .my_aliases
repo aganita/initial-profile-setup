@@ -20,6 +20,10 @@ alias gpush='git push'
 alias gpull='git pull'
 alias gti='git'
 
+#fullstack aliases
+alias cf='cd ~/workspace/full-stack-academy'
+
+
 #z-shell aliases
 alias zshconfig='vi ~/.zshrc'
 alias ohmyzsh='vi ~/.oh-my-zsh'
