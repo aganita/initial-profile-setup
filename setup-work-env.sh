@@ -26,9 +26,17 @@ brew install -g n
 git clone https://github.com/aganita/initial-profile-setup.git $dir_path/initial-profile-setup
   echo "YAY 2! Your profile files are cloned to: $dir_path"
 
-# install node version control and z-shell
+# install node version control and curl
 npm install -g n
+brew install curl
+
+# install zsh
 brew install zsh
+
+# install and setup zsh themes oh-my-zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+ln -sf $dir_path/initial-profile-setup/zshell/.zshrc $HOME/.zshrc
+ln -sf $dir_path/initial-profile-setup/.my_aliases $HOME/.my_aliases
 
 # install nodemon and webpack
 npm install -g nodemon
