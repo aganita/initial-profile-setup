@@ -23,8 +23,8 @@ fi
 brew install -g n
 
 # create and clone all of the respective repos
-git clone https://github.com/aganita/profile-files.git $dir_path/profile-files
-  echo "YAY 2! Your projects are cloned to: $dir_path"
+git clone https://github.com/aganita/initial-profile-setup.git $dir_path/initial-profile-setup
+  echo "YAY 2! Your profile files are cloned to: $dir_path"
 
 # install node version control
 npm install -g n
