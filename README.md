@@ -1,1 +1,1 @@
-# profile-files
+# bash script to setup initial dev env
