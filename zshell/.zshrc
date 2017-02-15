@@ -88,18 +88,3 @@ fi
 if [ -f ~/.set_my_exports ]; then
     . ~/.set_my_exports
 fi
-
-#change the node version when I am in newlarn folder. this script can be depreciated soon. (Ani)
-autoload -U add-zsh-hook
-load-n() {
-  local re="[^6]\..*\."
-  if [[ $PWD/ = */newlearn/* ]]; then
-    if [[ `node -v` != "v6.1.0" ]]; then
-      echo "Switching to v6.1.0" && n 6.1.0
-    fi
-  elif [[ `node -v` =~ $re ]]; then
-    echo "Switching to stable" && n stable
-  fi
-}
-add-zsh-hook chpwd load-n
-load-n
