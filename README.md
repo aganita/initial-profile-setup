@@ -4,9 +4,7 @@
 - [Homebrew](https://brew.sh/) for MacOS
 
 ### Get the source code
-Clone the repo and install node components in package.json
+get script and run 
 ```shell
-$ git clone https://github.com/aganita/SimonSays.git SimonSays
-$ cd SimonSays
-$ npm install
+$ git clone https://github.com/aganita/initial-profile-setup.git 
 ```
