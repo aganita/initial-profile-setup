@@ -26,8 +26,9 @@ brew install -g n
 git clone https://github.com/aganita/initial-profile-setup.git $dir_path/initial-profile-setup
   echo "YAY 2! Your profile files are cloned to: $dir_path"
 
-# install node version control
+# install node version control and z-shell
 npm install -g n
+brew install zsh
 
 # install nodemon and webpack
 npm install -g nodemon
