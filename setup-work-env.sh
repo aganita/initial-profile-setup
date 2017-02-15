@@ -30,13 +30,21 @@ git clone https://github.com/aganita/initial-profile-setup.git $dir_path/initial
 npm install -g n
 brew install curl
 
+# for bash
+ln -sf  $dir_path/initial-profile-setup/bash/.bash_profile $HOME/.bash_profile
+
 # install zsh
 brew install zsh
 
 # install and setup zsh themes oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ln -sf $dir_path/initial-profile-setup/zshell/.zshrc $HOME/.zshrc
+
+# create a symlink for my custom aliases
 ln -sf $dir_path/initial-profile-setup/.my_aliases $HOME/.my_aliases
+
+# create a separate file for all env variables
+touch $HOME/.set_my_exports
 
 # install nodemon and webpack
 npm install -g nodemon
