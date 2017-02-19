@@ -34,6 +34,7 @@ ln -sf $dir_path/initial-profile-setup/zshell/.zshrc $HOME/.zshrc
 
 ln -sf $dir_path/initial-profile-setup/.my_aliases $HOME/.my_aliases
 touch $HOME/.set_my_exports
+source ~/.zshrc
 
 npm install -g nodemon
 npm install -g webpack
