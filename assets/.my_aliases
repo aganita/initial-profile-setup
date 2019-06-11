@@ -10,7 +10,7 @@ alias ga='git add '
 alias gb='git branch '
 alias gc='git commit -m'
 alias gd='git diff'
-alias go='git checkout '
+alias goto='git checkout '
 alias gb='git branch -v'
 alias gk='gitk --all&'
 alias gx='gitx --all'
@@ -19,27 +19,21 @@ alias gps='git push'
 alias gpl='git pull'
 alias gti='git'
 
-#z-shell aliases
-alias zshconfig='vi ~/.zshrc'
-alias ohmyzsh='vi ~/.oh-my-zsh'
-alias update='source ~/.zshrc'
 
 #detect the OS
-platform='unknown'
-unamestr=`uname`
-if [[ "$unamestr" == 'Linux' ]]; then
+platform="unknown"
+unamestr=$(uname)
+if [[ "${unamestr}" = "Linux" ]]; then
    platform='linux'
-elif [[ "$unamestr" == 'Darwin' ]]; then
-   platform='mac'
+elif [[ "$unamestr" = "Darwin" ]]; then
+   platform="mac"
 fi
 
 # platform specific aliases
-if [[ $platform == 'linux' ]]; then
-   alias subl='~/workspace/tools/sublime_text_2/sublime_text'
+if [[ $platform = "linux" ]]; then
    alias ls='ls --color=auto'
    alias ll='ls -ltra --color=auto'
-elif [[ $platform == 'mac' ]]; then
-   alias subl='/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl'
+elif [[ $platform = "mac" ]]; then
    alias ls='ls -G'
    alias ll='ls -ltraG'
 fi

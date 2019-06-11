@@ -1,7 +1,7 @@
 DEFAULT_USER=`whoami`
 
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/$DEFAULT_USER/.oh-my-zsh
+export ZSH=/Users/${DEFAULT_USER}/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -85,6 +85,10 @@ if [ -f ~/.my_aliases ]; then
     . ~/.my_aliases
 fi
 
-if [ -f ~/.set_my_exports ]; then
-    . ~/.set_my_exports
+if [ -f ~/.my_exports ]; then
+    . ~/.my_exports
 fi
+
+HISTCONTROL=ignoreboth
+
+ulimit -c unlimited

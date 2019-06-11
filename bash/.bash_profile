@@ -1,12 +1,12 @@
-# Alias definitions.
-# Save all aliases in ~/.bash_aliases
-
 if [ -f ~/.my_aliases ]; then
     . ~/.my_aliases
 fi
 
-if [ -f ~/.set_my_exports ]; then
-    . ~/.set_my_exports
+if [ -f ~/.my_exports ]; then
+    . ~/.my_exports
 fi
 
-# TO DO write script that will deploy my files to git and webhostign server 
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
