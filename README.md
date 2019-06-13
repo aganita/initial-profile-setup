@@ -1,11 +1,12 @@
-# bash script for profile setup for MacOS
+# bash script to setup my dev profile on OSX
 ### Requirements
-- [Xcode](https://developer.apple.com/xcode/) for iOS development
-- [Homebrew](https://brew.sh/) for MacOS
-- [Git](https://git-scm.com/book/en/v1/Getting-Started-Installing-Git) for MacOS
+- [Xcode](https://developer.apple.com/xcode/)
+- [Homebrew](https://brew.sh/) for OSX
+- [Git](https://git-scm.com/book/en/v1/Getting-Started-Installing-Git)
 
 ### Installation
-from anywhere on you computer
+- open terminal
+- from any directory run: 
 ```shell
 $ git clone https://github.com/aganita/initial-profile-setup.git 
 $ cd initial-profile-setup
