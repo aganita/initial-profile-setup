@@ -1,0 +1,34 @@
+# basic commands
+alias cp='cp -i'
+alias mv='mv -i'
+alias rm='rm -i'
+alias pwd='pwd -P'
+alias grep='grep --color=auto'
+
+# git commands
+alias gti='git'
+alias gs='git status '
+alias gac='git commit -a -m'
+alias gall='git add -all '
+alias gc='git commit -m '
+alias goto='git checkout '
+alias gp='git push'
+alias gpl='git pull'
+
+# get the current OS
+my_os="unknown"
+unamestr=$(uname)
+if [[ "${unamestr}" = "Linux" ]]; then
+   my_os='linux'
+elif [[ "$unamestr" = "Darwin" ]]; then
+   my_os="mac"
+fi
+
+# OS specific aliases
+if [[ $my_os = "linux" ]]; then
+   alias ls='ls --color=auto'
+   alias ll='ls -ltra --color=auto'
+elif [[ $my_os = "mac" ]]; then
+   alias ls='ls -G'
+   alias ll='ls -ltraG'
+fi

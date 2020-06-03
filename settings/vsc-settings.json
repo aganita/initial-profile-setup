@@ -5,5 +5,7 @@
     "workbench.activityBar.visible": true,
     "editor.minimap.enabled": false,
     "breadcrumbs.enabled": false,
-    "editor.renderControlCharacters": false
+    "editor.renderControlCharacters": false,
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false
 }
