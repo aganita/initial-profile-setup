@@ -3,7 +3,7 @@
 set -e # stop if error 
 set -x # verbose installation
 
-echo "Enter your working directory or hit Enter for default (~/workspace)"
+echo "Enter your working directory. Hit Enter for default setting (~/workspace)"
 read dir_path
 dir_path=${dir_path:-"~/workspace"}
 
@@ -15,15 +15,25 @@ if [[ ! -d $dir_path/my-profile ]]; then
   git clone https://github.com/aganita/my-profile.git $dir_path/my-profile
 fi
 
-ln -sf  $dir_path/my-profile/bash/.bash_profile $HOME/.bash_profile
-ln -sf  $dir_path/my-profile/settings/.my_aliases $HOME/.my_aliases
-ln -sf  $dir_path/my-profile/settings/.my_exports $HOME/.my_exports
+ln -sf $dir_path/my-profile/bash/.bash_profile $HOME/.bash_profile
+ln -sf $dir_path/my-profile/settings/.my_aliases $HOME/.my_aliases
+ln -sf $dir_path/my-profile/settings/.my_exports $HOME/.my_exports
 
 brew install zsh
-ln -sf  $dir_path/my-profile/zshell/.zshrc $HOME/.zshrc
+ln -sf $dir_path/my-profile/zshell/.zshrc $HOME/.zshrc
 
-# install iterm2
-ln -sf  $dir_path/my-profile/settings/com.googlecode.iterm2.plist $HOME/Library/Preferences/com.googlecode.iterm2.plis
+read -p "Install iTerm2 and press Enter to continue"
+# ln -sf $dir_path/my-profile/settings/com.googlecode.iterm2.plist $HOME/Library/Preferences/com.googlecode.iterm2.plis
 
-# install vc code
-# ln -sf  $dir_path/my-profile/settings/vsc-settings.json $HOME/Library/Application Support/Code/User/settings.json
+read -p "Install VSCodium and press Enter to continue"
+rm $HOME/Library/Application Support/Code/User/settings.json
+ln -sf $dir_path/my-profile/settings/vsc-settings.json $HOME/Library/Application Support/Code/User/settings.json
+
+read -p "Install Brave browser and press Enter to continue"
+read -p "Copy over bookmarks for Brave and press Enter to continue"
+
+read -p "Install Chrome browser and press Enter to continue"
+
+read -p "Install NodeJS browser and press Enter to continue"
+ 
+
