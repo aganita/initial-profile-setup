@@ -1,5 +1,9 @@
 DEFAULT_USER=`whoami`
 
+if [ ! -d ~/.oh-my-zsh ]; then
+    git clone https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
+fi
+
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/${DEFAULT_USER}/.oh-my-zsh
 
