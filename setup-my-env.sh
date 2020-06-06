@@ -1,7 +1,9 @@
 #!/usr/bin/env bash
 
 set -e # stop if error 
-set -x # verbose installation
+#set -x # verbose installation
+
+GREEN=`tput setaf 2` # https://stackoverflow.com/questions/5947742/how-to-change-the-output-color-of-echo-in-linux
 
 echo "Enter your working directory. Hit Enter for default setting (~/workspace)"
 read dir_path
@@ -22,23 +24,23 @@ ln -sf $dir_path/my-profile/settings/.my_exports $HOME/.my_exports
 brew install zsh
 ln -sf $dir_path/my-profile/zshell/.zshrc $HOME/.zshrc
 
-read -p "Rebind Caps Lock key to Ctrl and Enter to continue"
+read -p "${GREEN}====> Rebind Caps Lock key to Ctrl and Enter to continue"
 
-read -p "Install iTerm2 and press Enter to continue"
+read -p "====> Install iTerm2. Press Enter to continue"
 ln -sf $dir_path/my-profile/settings/com.googlecode.iterm2.plist $HOME/Library/Preferences/com.googlecode.iterm2.plist
 
-read -p "Install VSCodium and press Enter to continue"
+read -p "====> Install VSCodium. Press Enter to continue"
 rm $HOME/Library/Application\ Support/VSCodium/User/settings.json
 ln -sf $dir_path/my-profile/settings/vsc-settings.json $HOME/Library/Application\ Support/VSCodium/User/settings.json
 
-read -p "Install font Meslo LG M DZ Regular for Powerline"
+read -p "====> Install font Meslo LG M DZ Regular for Powerline located at my-profile/settings. Press Enter to continue"
 
-read -p "Install NodeJS browser and press Enter to continue"
+read -p "====> Install NodeJS browser. Press Enter to continue"
 
-read -p "Install Brave browser and press Enter to continue"
-read -p "Copy over bookmarks for Brave and press Enter to continue"
+read -p "====> Install Brave browser. Press Enter to continue"
+read -p "Copy over bookmarks for Brave. Press Enter to continue"
 
-read -p "Install Chrome browser and press Enter to continue"
+read -p "====> Install Chrome browser. Press Enter to continue"
 
  
 
