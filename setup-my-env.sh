@@ -22,18 +22,23 @@ ln -sf $dir_path/my-profile/settings/.my_exports $HOME/.my_exports
 brew install zsh
 ln -sf $dir_path/my-profile/zshell/.zshrc $HOME/.zshrc
 
+read -p "Rebind Caps Lock key to Ctrl and Enter to continue"
+
 read -p "Install iTerm2 and press Enter to continue"
-# ln -sf $dir_path/my-profile/settings/com.googlecode.iterm2.plist $HOME/Library/Preferences/com.googlecode.iterm2.plis
+ln -sf $dir_path/my-profile/settings/com.googlecode.iterm2.plist $HOME/Library/Preferences/com.googlecode.iterm2.plist
 
 read -p "Install VSCodium and press Enter to continue"
-rm $HOME/Library/Application Support/Code/User/settings.json
-ln -sf $dir_path/my-profile/settings/vsc-settings.json $HOME/Library/Application Support/Code/User/settings.json
+rm $HOME/Library/Application\ Support/VSCodium/User/settings.json
+ln -sf $dir_path/my-profile/settings/vsc-settings.json $HOME/Library/Application\ Support/VSCodium/User/settings.json
+
+read -p "Install font Meslo LG M DZ Regular for Powerline"
+
+read -p "Install NodeJS browser and press Enter to continue"
 
 read -p "Install Brave browser and press Enter to continue"
 read -p "Copy over bookmarks for Brave and press Enter to continue"
 
 read -p "Install Chrome browser and press Enter to continue"
 
-read -p "Install NodeJS browser and press Enter to continue"
  
 

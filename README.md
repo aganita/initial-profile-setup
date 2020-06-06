@@ -8,10 +8,10 @@
 - open terminal
 - from any directory run: 
 ```shell
-$ git clone https://github.com/aganita/initial-profile-setup.git 
-$ cd initial-profile-setup
-$ chmod u=rx setup-work-env.sh
-$ ./setup-work-env.sh
+$ git clone https://github.com/aganita/my-profile.git 
+$ cd my-profile
+$ chmod u=rx setup-my-env.sh
+$ ./setup-my-env.sh
 $ cd ..
-$ rm -rf initial-profile-setup
+$ rm -rf my-profile
 ```
