@@ -1,10 +1,12 @@
 DEFAULT_USER=`whoami`
+export PS1="☯ ${DEFAULT_USER}$ "
 
 if [ ! -d ~/.oh-my-zsh ]; then
     git clone https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
 fi
 
 # Path to your oh-my-zsh installation.
+ZSH_DISABLE_COMPFIX=true
 export ZSH=/Users/${DEFAULT_USER}/.oh-my-zsh
 
 # Set name of the theme to load.

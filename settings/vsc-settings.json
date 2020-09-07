@@ -7,5 +7,17 @@
     "breadcrumbs.enabled": false,
     "editor.renderControlCharacters": false,
     "explorer.confirmDelete": false,
-    "explorer.confirmDragAndDrop": false
+    "explorer.confirmDragAndDrop": false,
+    "terminal.integrated.fontFamily": "Meslo LG M DZ for Powerline",
+    "terminal.integrated.shell.linux": "/bin/zsh",
+    "terminal.integrated.shell.osx": "/bin/zsh",
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "HookyQR.beautify"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "HookyQR.beautify"
+    }
 }
