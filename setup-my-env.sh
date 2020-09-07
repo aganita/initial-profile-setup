@@ -36,12 +36,12 @@ ln -sf $dir_path/my-profile/settings/com.googlecode.iterm2.plist $HOME/Library/P
 
 read -p "====> Install font Meslo LG M DZ Regular for Powerline located at my-profile/settings. [Press Enter to continue]"
 
-read -p "====> Install NodeJS. [Press Enter to continue]"
+read -p "====> Install NodeJS: https://nodejs.org/en/download/. [Press Enter to continue]"
 
-read -p "====> Install Brave browser. [Press Enter to continue]"
+read -p "====> Install Spectacle: https://www.spectacleapp.com/. [Press Enter to continue]"
+
+read -p "====> Install Brave: https://brave.com/download/. [Press Enter to continue]"
 read -p "Copy over bookmarks for Brave. [Press Enter to continue]"
 
-read -p "====> Install Chrome browser. [Press Enter to continue]${RESET_COLOR}"
-
- 
+read -p "====> Install Chrome. [Press Enter to continue]${RESET_COLOR}"
 

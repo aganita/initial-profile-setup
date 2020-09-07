@@ -1,5 +1,4 @@
 DEFAULT_USER=`whoami`
-export PS1="☯ ${DEFAULT_USER}$ "
 
 if [ ! -d ~/.oh-my-zsh ]; then
     git clone https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
