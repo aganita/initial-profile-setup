@@ -43,5 +43,6 @@ read -p "====> Install Spectacle: https://www.spectacleapp.com/. [Press Enter to
 read -p "====> Install Brave: https://brave.com/download/. [Press Enter to continue]"
 read -p "Copy over bookmarks for Brave. [Press Enter to continue]"
 
-read -p "====> Install Chrome. [Press Enter to continue]${RESET_COLOR}"
+read -p "====> Install Chrome. [Press Enter to continue]"
 
+read -p "====> Install Slack. [Press Enter to continue]${RESET_COLOR}"
